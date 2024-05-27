@@ -34,6 +34,12 @@ PRODUCT_PACKAGES += BatteryResOnc
 
 PRODUCT_PACKAGES += CertifiedResOnc
 
+PRODUCT_PACKAGES += CertifiedPropsOverlay
+
+$(call inherit-product, vendor/xiaomi/onclite/onclite-vendor.mk)
+$(call inherit-product, $(SRC_TARGET_DIR)/product/non_ab_device.mk)
+$(call inherit-product, $(SRC_TARGET_DIR)/product/emulated_storage.mk)
+
 $(call inherit-product, vendor/xiaomi/onclite/onclite-vendor.mk)
 
 # Overlays
@@ -307,7 +313,7 @@ PRODUCT_PACKAGES += \
 
 PRODUCT_COPY_FILES += \
     $(LOCAL_PATH)/configs/powerhint.xml:$(TARGET_COPY_OUT_VENDOR)/etc/powerhint.xml
-
+#
 # QMI
 PRODUCT_PACKAGES += \
     libjson
