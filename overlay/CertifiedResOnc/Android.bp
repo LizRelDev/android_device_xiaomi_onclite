@@ -1,0 +1,11 @@
+//
+// Copyright (C) 2023 Paranoid Android
+// Copyright (C) 2024 Hadad <hadad@linuxmail.org>
+//
+// SPDX-License-Identifier: Apache-2.0
+//
+
+runtime_resource_overlay {
+    name: "CertifiedResOnc",
+    product_specific: true,
+}

@@ -14,6 +14,29 @@
 # limitations under the License.
 #
 
+<<<<<<< HEAD
+=======
+PRODUCT_SHIPPING_API_LEVEL := 28
+
+BOARD_SHIPPING_API_LEVEL := 28
+
+BOARD_API_LEVEL := 28
+
+PRODUCT_PACKAGES += $(PRODUCT_PACKAGES_SHIPPING_API_LEVEL_28)
+
+TARGET_BOARD_PLATFORM := msm8953
+
+TARGET_BOARD_SUFFIX := _64
+
+PRODUCT_OTA_ENFORCE_VINTF_KERNEL_REQUIREMENTS := true
+
+PRODUCT_PACKAGES += FMRadioExclude
+
+PRODUCT_PACKAGES += BatteryResOnc
+
+PRODUCT_PACKAGES += CertifiedResOnc
+
+>>>>>>> e23775c (onclite: overlay: CertifiedPropsOverlay --> CertifiedResOnc.)
 $(call inherit-product, vendor/xiaomi/onclite/onclite-vendor.mk)
 
 # Overlays
