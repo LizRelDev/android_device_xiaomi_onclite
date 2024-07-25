@@ -110,8 +110,6 @@ TARGET_USES_ION := true
 TARGET_USES_GRALLOC1 := true
 TARGET_USES_HWC2 := true
 
-OVERRIDE_RS_DRIVER := libRSDriver_adreno.so
-
 # DRM
 TARGET_ENABLE_MEDIADRM_64 := true
 
@@ -190,7 +188,6 @@ PRODUCT_VENDOR_MOVE_ENABLED := true
 VENDOR_SECURITY_PATCH := 2021-02-01
 
 # Wi-Fi
-BOARD_HAS_QCOM_WLAN := true
 BOARD_HOSTAPD_DRIVER := NL80211
 BOARD_HOSTAPD_PRIVATE_LIB := lib_driver_cmd_qcwcn
 BOARD_WLAN_DEVICE := qcwcn
@@ -202,4 +199,4 @@ WIFI_HIDL_UNIFIED_SUPPLICANT_SERVICE_RC_ENTRY := true
 WPA_SUPPLICANT_VERSION := VER_0_8_X
 
 # Inherit from the proprietary version
--include vendor/xiaomi/onclite/BoardConfigVendor.mk
+include vendor/xiaomi/onclite/BoardConfigVendor.mk
