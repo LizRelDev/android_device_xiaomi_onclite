@@ -14,8 +14,6 @@
 # limitations under the License.
 #
 
-<<<<<<< HEAD
-=======
 PRODUCT_SHIPPING_API_LEVEL := 28
 
 BOARD_SHIPPING_API_LEVEL := 28
@@ -36,7 +34,6 @@ PRODUCT_PACKAGES += BatteryResOnc
 
 PRODUCT_PACKAGES += CertifiedResOnc
 
->>>>>>> e23775c (onclite: overlay: CertifiedPropsOverlay --> CertifiedResOnc.)
 $(call inherit-product, vendor/xiaomi/onclite/onclite-vendor.mk)
 
 # Overlays
